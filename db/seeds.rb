@@ -17,3 +17,21 @@ Post.destroy_all
 puts "seeding Users"
 
 steven = User.create!(username: "steven420", password:"123456", first_name:"Steven", last_name:"Wu", age: 29, hometown:"Flushing")
+
+alice = User.create!(username: "alice420", password:"123456", first_name:"Alice", last_name:"Jansen", age: 25, hometown:"Springfield")
+
+
+puts "seeding Posts"
+
+post1 = Post.create!( user: steven, content: "wasuupppppp")
+
+
+puts "seeding Likes"
+
+like1 = Like.create!( post: post1, user:alice)
+
+
+puts "seeding Friends"
+
+puts "seeding Messages"
+
