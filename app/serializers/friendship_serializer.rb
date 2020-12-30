@@ -1,5 +1,5 @@
 class FriendshipSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :user, :friend
   has_one :user
   has_one :friend
 end

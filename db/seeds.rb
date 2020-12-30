@@ -34,7 +34,10 @@ like1 = Like.create!( post: post1, user:alice)
 puts "seeding Friendships"
 
 friendship1 = Friendship.create!(user: steven , friend: alice)
-friendship2 = Friendship.create!(user: alice , friend: steven)
+# friendship2 = Friendship.create!(user: alice , friend: steven)
 
 puts "seeding Messages"
 
+puts "seeding Pals"
+
+pal1 = Pal.create!(user1: steven , user2: alice)
