@@ -7,11 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 puts "deleting seeds"
-Friend.destroy_all
 User.destroy_all
 Like.destroy_all
 Message.destroy_all
 Post.destroy_all
+Friendship.destroy_all
 
 
 puts "seeding Users"
@@ -31,7 +31,10 @@ puts "seeding Likes"
 like1 = Like.create!( post: post1, user:alice)
 
 
-puts "seeding Friends"
+puts "seeding Friendships"
+
+friendship1 = Friendship.create!(user: steven , friend: alice)
+friendship2 = Friendship.create!(user: alice , friend: steven)
 
 puts "seeding Messages"
 
