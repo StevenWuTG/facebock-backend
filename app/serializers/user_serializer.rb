@@ -5,6 +5,7 @@ class UserSerializer < ActiveModel::Serializer
   has_many :posts
   has_many :friendships
   has_many :friends
+  # has_many :pals
   # has_many :user2
   has_many :likes, through: :posts
   
