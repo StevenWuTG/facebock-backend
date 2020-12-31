@@ -61,7 +61,7 @@ ActiveRecord::Schema.define(version: 2020_12_30_014837) do
 
   create_table "users", force: :cascade do |t|
     t.string "username"
-    t.string "password"
+    t.string "password_digest"
     t.boolean "vaccinated"
     t.string "img_url"
     t.string "first_name"

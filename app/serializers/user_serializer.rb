@@ -1,4 +1,5 @@
 class UserSerializer < ActiveModel::Serializer
+  # need to refractor securely
   attributes :id, :username, :password, :vaccinated, :img_url, :first_name, :last_name, :age, :hometown
 
   has_many :messages
@@ -8,5 +9,6 @@ class UserSerializer < ActiveModel::Serializer
   # has_many :pals
   # has_many :user2
   has_many :likes, through: :posts
+
   
 end
