@@ -38,6 +38,8 @@ class PostsController < ApplicationController
     private
 
     def post_params
-        params.permit()
+        params.permit(:content,:img_url)
     end
+    # User Must Exists inorder for this to be completed 
+    # Believe it is because of authoriz
 end
