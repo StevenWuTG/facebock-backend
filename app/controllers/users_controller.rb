@@ -7,6 +7,10 @@ class UsersController < ApplicationController
         render json: users, except: [:created_at, :updated_at]
     end
 
+    def profile
+        render json: { user: UserSerializer.new(@user)}, status: :accepted
+    end
+
     def create
         # byebug
         user = User.create!(user_params)
