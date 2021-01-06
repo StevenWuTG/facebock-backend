@@ -1,4 +1,4 @@
-class PostContainersController < ApplicationController
+class Api::V1::PostContainersController < ApplicationController
 # This is our version of the wall 
     def index
         postsContainer = PostContainer.all

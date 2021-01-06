@@ -1,4 +1,4 @@
-class PalsController < ApplicationController
+class Api::V1::PalsController < ApplicationController
 
     def index
         pals = Pal.all
